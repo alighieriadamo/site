@@ -1,0 +1,379 @@
+:root {
+    --verde-escuro: #4b5f41;
+    --verde-claro: #667e59;
+    --laranja: #f37021;
+    --preto-suave: #333333;
+}
+
+body {
+    /* Define o degradê linear com opacidade */
+    background: linear-gradient(
+        to bottom, /* Direção do degradê: de cima para baixo */
+        rgba(75, 95, 65, 0.8), /* Verde escuro com opacidade */
+        rgba(102, 126, 89, 0.5) /* Verde claro com opacidade */
+    );
+    min-height: 100vh; /* Garante que cobre toda a altura da página */
+    margin: 0; /* Remove margens padrão */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Navbar */
+.navbar {
+  background: radial-gradient(circle, var(--verde-claro) 0%, var(--verde-escuro) 100%); /* Degradê radial */
+  padding: 1rem;
+  position: relative; /* Necessário para o posicionamento absoluto do ::after */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave abaixo */
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: -200px; /* Começa após o final do navbar */
+  left: 0;
+  width: 100%;
+  height: 200px; /* Altura do fundo adicional */
+  background: url('../images/heder_site_leaves.png') bottom / cover no-repeat; /* Imagem de fundo */
+  z-index: 5; /* Mantém a imagem atrás do conteúdo */
+}
+
+
+.navbar-brand img {
+    height: 40px; /* Ajuste do tamanho da logo */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Texto branco */
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--laranja); /* Destaque laranja ao passar o mouse */
+}
+
+.navbar-nav {
+    display: flex; /* Flexbox para controlar a distribuição dos itens */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    margin-bottom: 0; /* Remove margens extras */
+    width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda do botão */
+    background-color: white; /* Fundo branco */
+    padding: 0.5rem; /* Espaçamento */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove o ícone padrão */
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+}
+
+.toggler-line {
+    content: "";
+    display: block;
+    background-color: var(--laranja); /* Cor laranja */
+    height: 2px; /* Espessura dos riscos agora mais fina */
+    margin: 4px 0; /* Espaçamento entre os riscos */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+.navbar-toggler-icon .toggler-line {
+    width: 100%;
+}
+
+/* Remover o padding do container apenas para a área do banner */
+.container.banner-container {
+  padding: 0;
+}
+
+/* Remover o padding do container apenas para a área do banner */
+.container.banner-container {
+  padding: 0;
+}
+
+.container.banner-container {
+  padding: 0;
+}
+
+.container-fluid.banner-container {
+  padding: 0;
+}
+
+.container.banner-container {
+  padding: 0;
+}
+
+/* Banner principal */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+
+/* Imagem do banner */
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo do banner */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: right;
+  line-height: 1; /* Menos espaçamento entre as linhas */
+  max-width: 40%;
+}
+
+/* Texto */
+.banner-text {
+  font-size: 2.5rem;
+  font-family: var(--font-bold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-subtext {
+  font-family: var(--font-regular);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.banner-subtextt {
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Botões do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .banner {
+      height: auto;
+      text-align: center;
+  }
+
+  .banner-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+  }
+
+  .banner-content {
+      position: static;
+      max-width: 100%;
+      padding: 20px;
+      text-align: center;
+      transform: none;
+  }
+
+  .banner-text {
+      font-size: 2rem;
+  }
+
+  .banner-subtext {
+      font-size: 1.5rem;
+  }
+}
+
+  .service-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-box i {
+    color: var(--laranja, #f37021); /* Use sua variável ou substitua pela cor desejada */
+  }
+  
+  .service-box h4 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-family: var(--font-bold);
+  }
+  
+  .service-box p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+  }  
+  
+  @media (max-width: 991.98px) {
+    .service-box {
+      padding: 1rem;
+    }
+  }
+
+/* Estilo para o Carrossel de Depoimentos */
+#depoimentos {
+  background: var(--laranja);
+}
+
+.depoimento-container {
+  background-color: #ffffff; /* Fundo branco para o container */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras leves */
+}
+
+.depoimento-container h2 {
+  font-family: var(--font-light);
+  color: var(--cinza); /* Cor cinza da marca */
+  margin-top: 30px;
+}
+
+.depoimento-img {
+  width: 120px; /* Tamanho fixo para a imagem */
+  height: 120px; /* Tamanho fixo para a imagem */
+  border-radius: 50%; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+}
+
+.carousel-item {
+  padding: 20px; /* Espaço interno para cada item do carrossel */
+}
+
+/* Estilo dos controles de navegação (setas) */
+.carousel-control-prev, .carousel-control-next {
+  background: none; /* Remove qualquer fundo */
+  border: none; /* Remove a borda */
+}
+
+/* Mudando a cor das setas para laranja com o uso do filtro */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: transparent; /* Remove qualquer fundo colorido */
+  filter: invert(38%) sepia(83%) saturate(2651%) hue-rotate(355deg) brightness(101%) contrast(100%); /* Aplica a cor laranja usando filtro */
+  width: 30px; /* Tamanho da seta */
+  height: 30px; /* Tamanho da seta */
+  border-radius: 0%; /* Remove o arredondamento da seta */
+}
+
+/* Estilo do nome da pessoa no depoimento */
+.depoimento-container h5 {
+  font-family: var(--font-medium);
+  font-size: 1.75rem; /* Aumentando o tamanho do nome */
+  color: var(--laranja) !important;
+}
+
+/* Melhorando a aparência do texto do depoimento */
+.depoimento-container p {
+  font-family: var(--font-light);
+  color: var(--cinza) !important;
+}
+
+/* Melhorando a aparência do texto de depoimentos */
+.text-muted {
+  font-style: italic;
+}
+
+/* Sessão Clientes */
+.carousel-container {
+  overflow: hidden; /* Oculta as partes fora da tela */
+  position: relative;
+}
+
+.logos-slider {
+  display: flex;
+  gap: 30px; /* Espaçamento entre as logos */
+  animation: slide 20s linear infinite; /* Movimento contínuo */
+}
+
+.logo-cliente {
+  max-height: 100px;
+  flex-shrink: 0; /* Garante que as logos não encolham */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-cliente:hover {
+  transform: scale(1.1); /* Zoom ao passar o mouse */
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move metade do carrossel (considerando as logos duplicadas) */
+  }
+}
+
+/* Sessão de Contato */
+#contato {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+#contato h2 {
+  color: var(--verde-escuro); /* Usa o verde escuro da identidade */
+}
+
+#contato .form-label {
+  font-weight: bold;
+}
+
+#contato .btn-primary {
+  background-color: var(--laranja); /* Usa o laranja da identidade */
+  border: none;
+}
+
+#contato .btn-primary:hover {
+  background-color: #d95b18; /* Laranja mais escuro no hover */
+}
+
+.map-container iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: right !important; /* Garante que o menu colapsado se alinhe à direita */
+    }
+
+    .navbar-nav {
+        margin-left: auto !important; /* Garante o alinhamento à direita para o menu em telas pequenas */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 20px; /* Espaçamento entre os itens */
+        border-bottom: 1px solid rgba(243, 112, 33, 0.3); /* Laranja com 20% de transparência */
+    }
+
+    .navbar-nav .nav-item:first-child {
+        border-top: none; /* Remove a linha do primeiro item */
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none; /* Remove a linha do último item */
+    }
+}

@@ -1,21 +1,17 @@
 :root {
-    --verde-escuro: #4b5f41;
-    --verde-claro: #667e59;
-    --laranja: #f37021;
-    --preto-suave: #333333;
+  --verde-escuro: #4b5f41;
+  --verde-claro: #667e59;
+  --laranja: #f37021;
+  --preto-suave: #333333;
 }
 
 body {
-    /* Define o degradê linear com opacidade */
-    background: linear-gradient(
-        to bottom, /* Direção do degradê: de cima para baixo */
-        rgba(75, 95, 65, 0.8), /* Verde escuro com opacidade */
-        rgba(102, 126, 89, 0.5) /* Verde claro com opacidade */
-    );
-    min-height: 100vh; /* Garante que cobre toda a altura da página */
-    margin: 0; /* Remove margens padrão */
-    display: flex;
-    flex-direction: column;
+  /* Define o degradê linear com opacidade */
+  background: linear-gradient(to bottom, /* Direção do degradê: de cima para baixo */ rgba(75, 95, 65, 0.8), /* Verde escuro com opacidade */ rgba(102, 126, 89, 0.5) /* Verde claro com opacidade */);
+  min-height: 100vh; /* Garante que cobre toda a altura da página */
+  margin: 0; /* Remove margens padrão */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Estilo do Navbar */
@@ -27,70 +23,69 @@ body {
 }
 
 .navbar::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -200px; /* Começa após o final do navbar */
   left: 0;
   width: 100%;
   height: 200px; /* Altura do fundo adicional */
-  background: url('../images/heder_site_leaves.png') bottom / cover no-repeat; /* Imagem de fundo */
+  background: url("../images/heder_site_leaves.png") bottom / cover no-repeat; /* Imagem de fundo */
   z-index: 5; /* Mantém a imagem atrás do conteúdo */
 }
 
-
 .navbar-brand img {
-    height: 40px; /* Ajuste do tamanho da logo */
+  height: 60px; /* Ajuste do tamanho da logo */
 }
 
 .navbar-nav .nav-link {
-    color: white; /* Texto branco */
-    font-weight: bold;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
+  color: white; /* Texto branco */
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--laranja); /* Destaque laranja ao passar o mouse */
+  color: var(--laranja); /* Destaque laranja ao passar o mouse */
 }
 
 .navbar-nav {
-    display: flex; /* Flexbox para controlar a distribuição dos itens */
-    justify-content: flex-end; /* Alinha os itens à direita */
-    margin-bottom: 0; /* Remove margens extras */
-    width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+  display: flex; /* Flexbox para controlar a distribuição dos itens */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  margin-bottom: 0; /* Remove margens extras */
+  width: 100%; /* Garante que a lista ocupe toda a largura disponível */
 }
 
 .navbar-nav .nav-item {
-    margin-left: 20px; /* Espaçamento entre os itens */
+  margin-left: 20px; /* Espaçamento entre os itens */
 }
 
 .navbar-toggler {
-    border: none; /* Remove a borda do botão */
-    background-color: white; /* Fundo branco */
-    padding: 0.5rem; /* Espaçamento */
-    border-radius: 5px; /* Bordas arredondadas (opcional) */
+  border: none; /* Remove a borda do botão */
+  background-color: white; /* Fundo branco */
+  padding: 0.5rem; /* Espaçamento */
+  border-radius: 5px; /* Bordas arredondadas (opcional) */
 }
 
 .navbar-toggler-icon {
-    background-image: none; /* Remove o ícone padrão */
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 22px;
+  background-image: none; /* Remove o ícone padrão */
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
 }
 
 .toggler-line {
-    content: "";
-    display: block;
-    background-color: var(--laranja); /* Cor laranja */
-    height: 2px; /* Espessura dos riscos agora mais fina */
-    margin: 4px 0; /* Espaçamento entre os riscos */
-    border-radius: 2px; /* Bordas arredondadas */
+  content: "";
+  display: block;
+  background-color: var(--laranja); /* Cor laranja */
+  height: 2px; /* Espessura dos riscos agora mais fina */
+  margin: 4px 0; /* Espaçamento entre os riscos */
+  border-radius: 2px; /* Bordas arredondadas */
 }
 
 .navbar-toggler-icon .toggler-line {
-    width: 100%;
+  width: 100%;
 }
 
 /* Remover o padding do container apenas para a área do banner */
@@ -197,40 +192,40 @@ body {
   }
 }
 
+.service-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-box i {
+  color: var(--laranja, #f37021); /* Use sua variável ou substitua pela cor desejada */
+}
+
+.service-box h4 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-family: var(--font-bold);
+}
+
+.service-box p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+@media (max-width: 991.98px) {
   .service-box {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #fff;
-  }
-  
-  .service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service-box i {
-    color: var(--laranja, #f37021); /* Use sua variável ou substitua pela cor desejada */
-  }
-  
-  .service-box h4 {
-    margin-top: 15px;
-    font-size: 1.25rem;
-    font-family: var(--font-bold);
-  }
-  
-  .service-box p {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #555;
-  }  
-  
-  @media (max-width: 991.98px) {
-    .service-box {
       padding: 1rem;
-    }
   }
+}
 
 /* Estilo para o Carrossel de Depoimentos */
 #depoimentos {
@@ -261,13 +256,15 @@ body {
 }
 
 /* Estilo dos controles de navegação (setas) */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   background: none; /* Remove qualquer fundo */
   border: none; /* Remove a borda */
 }
 
 /* Mudando a cor das setas para laranja com o uso do filtro */
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   background-color: transparent; /* Remove qualquer fundo colorido */
   filter: invert(38%) sepia(83%) saturate(2651%) hue-rotate(355deg) brightness(101%) contrast(100%); /* Aplica a cor laranja usando filtro */
   width: 30px; /* Tamanho da seta */
@@ -318,10 +315,10 @@ body {
 /* Animação do carrossel */
 @keyframes slide {
   0% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Move metade do carrossel (considerando as logos duplicadas) */
+      transform: translateX(-50%); /* Move metade do carrossel (considerando as logos duplicadas) */
   }
 }
 
@@ -353,27 +350,26 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Ajuste para telas menores */
 @media (max-width: 992px) {
-    .navbar-collapse {
-        text-align: right !important; /* Garante que o menu colapsado se alinhe à direita */
-    }
+  .navbar-collapse {
+      text-align: right !important; /* Garante que o menu colapsado se alinhe à direita */
+  }
 
-    .navbar-nav {
-        margin-left: auto !important; /* Garante o alinhamento à direita para o menu em telas pequenas */
-    }
+  .navbar-nav {
+      margin-left: auto !important; /* Garante o alinhamento à direita para o menu em telas pequenas */
+  }
 
-    .navbar-nav .nav-item {
-        margin-left: 20px; /* Espaçamento entre os itens */
-        border-bottom: 1px solid rgba(243, 112, 33, 0.3); /* Laranja com 20% de transparência */
-    }
+  .navbar-nav .nav-item {
+      margin-left: 20px; /* Espaçamento entre os itens */
+      border-bottom: 1px solid rgba(243, 112, 33, 0.3); /* Laranja com 20% de transparência */
+  }
 
-    .navbar-nav .nav-item:first-child {
-        border-top: none; /* Remove a linha do primeiro item */
-    }
+  .navbar-nav .nav-item:first-child {
+      border-top: none; /* Remove a linha do primeiro item */
+  }
 
-    .navbar-nav .nav-item:last-child {
-        border-bottom: none; /* Remove a linha do último item */
-    }
+  .navbar-nav .nav-item:last-child {
+      border-bottom: none; /* Remove a linha do último item */
+  }
 }

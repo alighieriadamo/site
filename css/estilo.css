@@ -290,35 +290,37 @@ body {
   font-style: italic;
 }
 
-/* Sessão Clientes */
-.carousel-container {
-  overflow: hidden; /* Oculta as partes fora da tela */
+/* Sessão Cliente */
+.logo-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   position: relative;
+  padding: 20px 0;
 }
 
-.logos-slider {
-  display: flex;
-  gap: 30px; /* Espaçamento entre as logos */
-  animation: slide 20s linear infinite; /* Movimento contínuo */
+/* Esteira de logos */
+.logo-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLogos 50s linear infinite; /* Animação contínua */
 }
 
-.logo-cliente {
-  max-height: 100px;
-  flex-shrink: 0; /* Garante que as logos não encolham */
-  transition: transform 0.3s ease-in-out;
+/* Estilo das logos */
+.logo-track img {
+  height: 80px; /* Ajuste a altura conforme necessário */
+  margin: 0 5px; /* Espaçamento entre as logos */
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.logo-cliente:hover {
-  transform: scale(1.1); /* Zoom ao passar o mouse */
-}
-
-/* Animação do carrossel */
-@keyframes slide {
+/* Animação de rolagem */
+@keyframes scrollLogos {
   0% {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-50%); /* Move metade do carrossel (considerando as logos duplicadas) */
+      transform: translateX(-50%); /* Move a esteira para a esquerda */
   }
 }
 

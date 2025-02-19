@@ -291,6 +291,10 @@ body {
 }
 
 /* Sessão Cliente */
+
+.clientes {
+  color: white;
+}
 .logo-container {
   width: 100%;
   overflow: hidden;

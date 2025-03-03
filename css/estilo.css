@@ -245,8 +245,8 @@ body {
 }
 
 .depoimento-img {
-  width: 120px; /* Tamanho fixo para a imagem */
-  height: 120px; /* Tamanho fixo para a imagem */
+  width: 100px; /* Tamanho fixo para a imagem */
+  height: 100px; /* Tamanho fixo para a imagem */
   border-radius: 50%; /* Bordas arredondadas */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
 }
@@ -307,7 +307,7 @@ body {
 .logo-track {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollLogos 50s linear infinite; /* Animação contínua */
+  animation: scrollLogos 80s linear infinite; /* Animação contínua */
 }
 
 /* Estilo das logos */

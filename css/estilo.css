@@ -3,42 +3,54 @@
   --verde-claro: #667e59;
   --laranja: #f37021;
   --preto-suave: #333333;
+  --font-bold: 'Arial', sans-serif; /* Defina a fonte correta */
+  --font-regular: 'Arial', sans-serif; /* Defina a fonte correta */
+  --font-light: 'Arial', sans-serif; /* Defina a fonte correta */
+  --cinza: #555; /* Defina a cor cinza */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   /* Define o degradê linear com opacidade */
-  background: linear-gradient(to bottom, /* Direção do degradê: de cima para baixo */ rgba(75, 95, 65, 0.8), /* Verde escuro com opacidade */ rgba(102, 126, 89, 0.5) /* Verde claro com opacidade */);
-  min-height: 100vh; /* Garante que cobre toda a altura da página */
-  margin: 0; /* Remove margens padrão */
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    rgba(75, 95, 65, 0.8),
+    rgba(102, 126, 89, 0.5)
+  );
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 /* Estilo do Navbar */
 .navbar {
-  background: radial-gradient(circle, var(--verde-claro) 0%, var(--verde-escuro) 100%); /* Degradê radial */
+  background: radial-gradient(circle, var(--verde-claro) 0%, var(--verde-escuro) 100%);
   padding: 1rem;
-  position: relative; /* Necessário para o posicionamento absoluto do ::after */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave abaixo */
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar::after {
   content: "";
   position: absolute;
-  bottom: -200px; /* Começa após o final do navbar */
+  bottom: -200px;
   left: 0;
   width: 100%;
-  height: 200px; /* Altura do fundo adicional */
-  background: url("../images/heder_site_leaves.png") bottom / cover no-repeat; /* Imagem de fundo */
-  z-index: 5; /* Mantém a imagem atrás do conteúdo */
+  height: 200px;
+  background: url("../images/heder_site_leaves.png") bottom / cover no-repeat;
+  z-index: 5;
 }
 
 .navbar-brand img {
-  height: 60px; /* Ajuste do tamanho da logo */
+  height: 60px;
 }
 
 .navbar-nav .nav-link {
-  color: white; /* Texto branco */
+  color: white;
   font-weight: bold;
   margin-left: 1rem;
   transition: color 0.3s ease;
@@ -46,29 +58,29 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--laranja); /* Destaque laranja ao passar o mouse */
+  color: var(--laranja);
 }
 
 .navbar-nav {
-  display: flex; /* Flexbox para controlar a distribuição dos itens */
-  justify-content: flex-end; /* Alinha os itens à direita */
-  margin-bottom: 0; /* Remove margens extras */
-  width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .navbar-nav .nav-item {
-  margin-left: 20px; /* Espaçamento entre os itens */
+  margin-left: 20px;
 }
 
 .navbar-toggler {
-  border: none; /* Remove a borda do botão */
-  background-color: white; /* Fundo branco */
-  padding: 0.5rem; /* Espaçamento */
-  border-radius: 5px; /* Bordas arredondadas (opcional) */
+  border: none;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .navbar-toggler-icon {
-  background-image: none; /* Remove o ícone padrão */
+  background-image: none;
   position: relative;
   display: inline-block;
   width: 30px;
@@ -78,10 +90,10 @@ body {
 .toggler-line {
   content: "";
   display: block;
-  background-color: var(--laranja); /* Cor laranja */
-  height: 2px; /* Espessura dos riscos agora mais fina */
-  margin: 4px 0; /* Espaçamento entre os riscos */
-  border-radius: 2px; /* Bordas arredondadas */
+  background-color: var(--laranja);
+  height: 2px;
+  margin: 4px 0;
+  border-radius: 2px;
 }
 
 .navbar-toggler-icon .toggler-line {
@@ -89,23 +101,6 @@ body {
 }
 
 /* Remover o padding do container apenas para a área do banner */
-.container.banner-container {
-  padding: 0;
-}
-
-/* Remover o padding do container apenas para a área do banner */
-.container.banner-container {
-  padding: 0;
-}
-
-.container.banner-container {
-  padding: 0;
-}
-
-.container-fluid.banner-container {
-  padding: 0;
-}
-
 .container.banner-container {
   padding: 0;
 }
@@ -132,7 +127,7 @@ body {
   transform: translateY(-50%);
   color: white;
   text-align: right;
-  line-height: 1; /* Menos espaçamento entre as linhas */
+  line-height: 1;
   max-width: 48%;
 }
 
@@ -164,31 +159,31 @@ body {
 /* 📱 Mobile */
 @media (max-width: 768px) {
   .banner {
-      height: auto;
-      text-align: center;
+    height: auto;
+    text-align: center;
   }
 
   .banner-img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
   }
 
   .banner-content {
-      position: static;
-      max-width: 100%;
-      padding: 20px;
-      text-align: center;
-      transform: none;
+    position: static;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: none;
   }
 
   .banner-text {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .banner-subtext {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -206,13 +201,14 @@ body {
 }
 
 .service-box i {
-  color: var(--laranja, #f37021); /* Use sua variável ou substitua pela cor desejada */
+  color: var(--laranja);
 }
 
-.service-box h4 {
+.service-box h5 {
   margin-top: 15px;
   font-size: 1.25rem;
   font-family: var(--font-bold);
+  color: var(--preto-suave);
 }
 
 .service-box p {
@@ -223,59 +219,60 @@ body {
 
 @media (max-width: 991.98px) {
   .service-box {
-      padding: 1rem;
+    padding: 1rem;
   }
 }
 
 /* Estilo para o Carrossel de Depoimentos */
 #depoimentos {
   background: var(--laranja);
+  color: var(--preto-suave);
 }
 
 .depoimento-container {
-  background-color: #ffffff; /* Fundo branco para o container */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras leves */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .depoimento-container h2 {
   font-family: var(--font-light);
-  color: var(--cinza); /* Cor cinza da marca */
+  color: var(--preto-suave);
   margin-top: 30px;
 }
 
 .depoimento-img {
-  width: 100px; /* Tamanho fixo para a imagem */
-  height: 100px; /* Tamanho fixo para a imagem */
-  border-radius: 50%; /* Bordas arredondadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item {
-  padding: 20px; /* Espaço interno para cada item do carrossel */
+  padding: 20px;
 }
 
 /* Estilo dos controles de navegação (setas) */
 .carousel-control-prev,
 .carousel-control-next {
-  background: none; /* Remove qualquer fundo */
-  border: none; /* Remove a borda */
+  background: none;
+  border: none;
 }
 
 /* Mudando a cor das setas para laranja com o uso do filtro */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: transparent; /* Remove qualquer fundo colorido */
-  filter: invert(38%) sepia(83%) saturate(2651%) hue-rotate(355deg) brightness(101%) contrast(100%); /* Aplica a cor laranja usando filtro */
-  width: 30px; /* Tamanho da seta */
-  height: 30px; /* Tamanho da seta */
-  border-radius: 0%; /* Remove o arredondamento da seta */
+  background-color: transparent;
+  filter: invert(38%) sepia(83%) saturate(2651%) hue-rotate(355deg) brightness(101%) contrast(100%);
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
 }
 
 /* Estilo do nome da pessoa no depoimento */
 .depoimento-container h5 {
   font-family: var(--font-medium);
-  font-size: 1.75rem; /* Aumentando o tamanho do nome */
+  font-size: 1.75rem;
   color: var(--laranja) !important;
 }
 
@@ -290,42 +287,38 @@ body {
   font-style: italic;
 }
 
-/* Sessão Cliente */
-
-.clientes {
-  color: white;
+/* Sessão Clientes */
+.nossos-clientes {
+  padding: 50px 0;
+  background-color: #fff;
 }
-.logo-container {
-  width: 100%;
+
+.nossos-clientes h2 {
+  margin-bottom: 30px;
+  color: var(--preto-suave);
+}
+
+.logo-track {
+  display: flex;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  padding: 20px 0;
 }
 
-/* Esteira de logos */
-.logo-track {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scrollLogos 80s linear infinite; /* Animação contínua */
+.logo-track-inner {
+  display: flex;
+  animation: scroll 180s linear infinite;
 }
 
-/* Estilo das logos */
 .logo-track img {
-  height: 80px; /* Ajuste a altura conforme necessário */
-  margin: 0 5px; /* Espaçamento entre as logos */
-  display: inline-block;
-  vertical-align: middle;
+  height: 50px;
+  margin: 0 20px;
+  flex-shrink: 0;
 }
 
-/* Animação de rolagem */
-@keyframes scrollLogos {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-50%); /* Move a esteira para a esquerda */
-  }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 /* Sessão de Contato */
@@ -335,7 +328,7 @@ body {
 }
 
 #contato h2 {
-  color: var(--verde-escuro); /* Usa o verde escuro da identidade */
+  color: var(--verde-escuro);
 }
 
 #contato .form-label {
@@ -343,12 +336,12 @@ body {
 }
 
 #contato .btn-primary {
-  background-color: var(--laranja); /* Usa o laranja da identidade */
+  background-color: var(--laranja);
   border: none;
 }
 
 #contato .btn-primary:hover {
-  background-color: #d95b18; /* Laranja mais escuro no hover */
+  background-color: #d95b18;
 }
 
 .map-container iframe {
@@ -366,51 +359,66 @@ body {
 }
 
 .contact-info a {
-  color: #f37021; /* Laranja da identidade visual */
-  text-decoration: none; /* Remove sublinhado */
+  color: #f37021;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .contact-info a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline;
 }
 
 .footer-custom {
-  background-color: #f37021; /* Laranja da identidade visual */
+  background-color: #f37021;
   padding: 20px 0;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
-.footer-custom .social-icons a {
-  color: white;
+.footer-custom .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.footer-custom a {
+  color: #ffffff;
   font-size: 1.5rem;
-  transition: color 0.3s ease-in-out;
 }
-
-.footer-custom .social-icons a:hover {
-  color: #ddd; /* Efeito ao passar o mouse */
-}
-
 
 /* Ajuste para telas menores */
 @media (max-width: 992px) {
   .navbar-collapse {
-      text-align: right !important; /* Garante que o menu colapsado se alinhe à direita */
+    text-align: right !important;
   }
 
   .navbar-nav {
-      margin-left: auto !important; /* Garante o alinhamento à direita para o menu em telas pequenas */
+    margin-left: auto !important;
   }
 
   .navbar-nav .nav-item {
-      margin-left: 20px; /* Espaçamento entre os itens */
-      border-bottom: 1px solid rgba(243, 112, 33, 0.3); /* Laranja com 20% de transparência */
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(243, 112, 33, 0.3);
   }
 
   .navbar-nav .nav-item:first-child {
-      border-top: none; /* Remove a linha do primeiro item */
+    border-top: none;
   }
 
   .navbar-nav .nav-item:last-child {
-      border-bottom: none; /* Remove a linha do último item */
+    border-bottom: none;
   }
+}
+
+.sobre {
+  background-color: var(--verde-escuro)
+}
+
+.sobre h3 {
+  color: var(--laranja);
 }

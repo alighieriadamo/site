@@ -325,6 +325,7 @@ body {
 #contato {
   background-color: #f8f9fa;
   padding: 3rem 0;
+  color: var(--preto-suave);
 }
 
 #contato h2 {
@@ -416,9 +417,51 @@ body {
 }
 
 .sobre {
-  background-color: var(--verde-escuro)
+  background-color: var(--verde-escuro);
+  text-align: justify;
 }
 
 .sobre h3 {
   color: var(--laranja);
+}
+
+.sobre .card-text {
+  color: var(--verde-claro);
+}
+
+.sobre i {
+  color: var(--laranja);
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Estilo do botão flutuante */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* Cor do WhatsApp */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cor do WhatsApp (mais escura) */
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.whatsapp-button i {
+  font-size: 32px; /* Aumentei o tamanho do ícone */
+  margin-top: 2px; /* Ajuste fino para centralizar o ícone */
 }

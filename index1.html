@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Flutuante do WhatsApp</title>
+    <!-- Bootstrap CSS (opcional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <style>
+        /* Estilo do botão flutuante */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366; /* Cor do WhatsApp */
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e; /* Cor do WhatsApp (mais escura) */
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .whatsapp-button i {
+            font-size: 32px; /* Aumentei o tamanho do ícone */
+            margin-top: 2px; /* Ajuste fino para centralizar o ícone */
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo do site -->
+    <div class="container">
+        <h1 class="mt-5">Bem-vindo ao Nosso Site</h1>
+        <p>Este é um exemplo de página com um botão flutuante do WhatsApp.</p>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações." class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i> <!-- Ícone do WhatsApp -->
+    </a>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

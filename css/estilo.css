@@ -435,6 +435,11 @@ body {
   margin-bottom: 5px;
 }
 
+.sobre img {
+  border-radius: 5px;
+  border: solid 2px #667e59;
+}
+
 /* Estilo do botão flutuante */
 .whatsapp-button {
   position: fixed;

@@ -3,58 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão Flutuante do WhatsApp</title>
-    <!-- Bootstrap CSS (opcional) -->
+    <title>Sobre Nós - Gerenciar Consultoria</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- CSS Personalizado -->
     <style>
-        /* Estilo do botão flutuante */
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366; /* Cor do WhatsApp */
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.3s;
-            z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-            text-decoration: none; /* Remove o sublinhado do link */
+        /* Estilo da seção Sobre Nós */
+        #sobre {
+            padding: 80px 0;
+            background-color: #f8f9fa; /* Fundo claro */
         }
 
-        .whatsapp-button:hover {
-            background-color: #128c7e; /* Cor do WhatsApp (mais escura) */
-            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        #sobre h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4b5f41; /* Verde escuro */
+            margin-bottom: 30px;
         }
 
-        .whatsapp-button i {
-            font-size: 32px; /* Aumentei o tamanho do ícone */
-            margin-top: 2px; /* Ajuste fino para centralizar o ícone */
+        #sobre p.lead {
+            font-size: 1.25rem;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Estilo do carrossel */
+        #carouselSobre {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo dos boxes de Missão, Visão e Valores */
+        .service-box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box i {
+            font-size: 2.5rem;
+            color: #f37021; /* Laranja */
+            margin-bottom: 15px;
+        }
+
+        .service-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4b5f41; /* Verde escuro */
+        }
+
+        .service-box p {
+            font-size: 1rem;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <!-- Conteúdo do site -->
-    <div class="container">
-        <h1 class="mt-5">Bem-vindo ao Nosso Site</h1>
-        <p>Este é um exemplo de página com um botão flutuante do WhatsApp.</p>
-    </div>
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna do Texto -->
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p class="lead">
+                        A Gerenciar Consultoria é especializada em gestão de saúde e segurança no trabalho, oferecendo soluções integradas para empresas de diversos segmentos. Nossa missão é garantir a conformidade legal e a segurança dos colaboradores, promovendo um ambiente de trabalho saudável e produtivo.
+                    </p>
+                    <p class="lead">
+                        Com uma equipe de profissionais altamente qualificados, atuamos em todo o território nacional, oferecendo serviços como consultoria em eSocial, medicina do trabalho, engenharia de segurança, treinamentos e capacitação, entre outros.
+                    </p>
+                </div>
 
-    <!-- Botão Flutuante do WhatsApp -->
-    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações." class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i> <!-- Ícone do WhatsApp -->
-    </a>
+                <!-- Coluna do Carrossel -->
+                <div class="col-md-6">
+                    <div id="carouselSobre" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselSobre" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
 
-    <!-- Bootstrap JS (opcional) -->
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/sobre1.jpg" class="d-block w-100" alt="Foto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sobre2.jpg" class="d-block w-100" alt="Foto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sobre3.jpg" class="d-block w-100" alt="Foto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sobre4.jpg" class="d-block w-100" alt="Foto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sobre5.jpg" class="d-block w-100" alt="Foto 5">
+                            </div>
+                        </div>
+
+                        <!-- Controles (setas) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSobre" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSobre" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Missão, Visão e Valores -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-bullseye"></i> <!-- Ícone de Missão -->
+                        <h3>Missão</h3>
+                        <p>
+                            Garantir a conformidade legal e a segurança dos colaboradores, promovendo um ambiente de trabalho saudável e produtivo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-eye"></i> <!-- Ícone de Visão -->
+                        <h3>Visão</h3>
+                        <p>
+                            Ser referência nacional em gestão de saúde e segurança no trabalho, oferecendo soluções inovadoras e eficientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-heart"></i> <!-- Ícone de Valores -->
+                        <h3>Valores</h3>
+                        <ul class="list-unstyled">
+                            <li>Ética e Transparência</li>
+                            <li>Comprometimento com a Qualidade</li>
+                            <li>Inovação e Sustentabilidade</li>
+                            <li>Respeito ao Colaborador</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

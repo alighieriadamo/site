@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentos Atendidos | Segurança Ocupacional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .segment-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #0d6efd;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+        }
+        .badge-custom {
+            background-color: #198754;
+        }
+        .accordion-body ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .accordion-body li:before {
+            content: "•";
+            color: #0d6efd;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .img-placeholder {
+            background-color: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 5px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .segment-title {
+            font-weight: 600;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="accordion" id="segmentosAccordion">
+            <!-- Item 1: Agricultura -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#agricultura">
+                        <i class="bi bi-tree-fill segment-icon"></i> Agricultura, Pecuária e Produção Florestal
+                    </button>
+                </h2>
+                <div id="agricultura" class="accordion-collapse collapse show" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Atendimento especializado para propriedades rurais, fazendas e produção agrícola com foco em NR-31.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>PGRTR (Programa de Gerenciamento de Riscos no Trabalho Rural) – NR-31</li>
+                                    <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional) – NR-07</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <span class="badge bg-success mb-2">Presencial/EAD</span>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPATR</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 12 - Máquinas e Equipamentos Agrícolas</li>
+                                    <li>NR 11 - Operação de máquinas pesadas, bem como, condução dos veículos agrícolas</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento, cultivo, reservas florestais e animais peçonhentos</li>
+                                    <li>FDS (FISPQ) - Agrotóxicos, Defensivos Agrícolas, Aditivos, Adjuvantes e Produtos Afins</li>
+                                    <li>NR 31 - Este treinamento geral, que pode variar de 16 a 40 horas, conforme a atividade e o risco envolvido, aborda diversos aspectos da segurança e saúde no trabalho rural</li>
+                                    <li>NR 33 - Espaços Confinados para atividades em secadores de grãos, silos e outros</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em alturas, como a instalação e manutenção de estruturas, árvores e equipamentos, caminhões e máquinas pesadas agrícolas</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Atendimento personalizado para diferentes culturas e portes de propriedades rurais, com enfoque em prevenção de acidentes com máquinas e animais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Mineração -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mineracao">
+                        <i class="bi bi-minecart-loaded segment-icon"></i> Indústrias Extrativas e Mineração
+                    </button>
+                </h2>
+                <div id="mineracao" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções especializadas para mineração com ênfase em NR-22 e gestão de riscos em ambientes de alta periculosidade.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>NR 01/22 - PGR (Programa de Gerenciamento de Riscos)</li>
+                                    <li>NR 22 - Plano de Emergência para Mineração</li>
+                                    <li>PCMSO - (Programa de Controle Médico de Saúde Ocupacional) – NR-07, com exames médicos específicos para mineração</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPAMIN</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - Treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 12 - Máquinas e Equipamentos (máquinas rotativas, torno, fresa, prensas, tesouras, CNC, plataformas elevatórias, empilhadeiras, pontes, pórticos, etc)</li>
+                                    <li>NR 11 - Operação de máquinas pesadas bem como condução dos veículos na mineração</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento, florestais e animais peçonhentos</li>
+                                    <li>FDS (FISPQ) – Produtos Químicos</li>
+                                    <li>NR 22 - Este treinamento é essencial para profissionais que trabalham na mineração, abrangendo aspectos como identificação de riscos, uso de EPIs, procedimentos de emergência e prevenção de acidentes</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em alturas</li>
+                                    <li>NR 11 - Movimentação de Materiais: Os treinamentos abordam os procedimentos de segurança para movimentação de materiais, como o uso correto de equipamentos, transporte de cargas e prevenção de acidentes</li>
+                                    <li>Serviços Elétricos: O treinamento em serviços elétricos é essencial para profissionais que trabalham com instalações elétricas ou equipamentos que utilizam energia elétrica</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Atendimento especializado para diferentes tipos de mineração (subterrânea, céu aberto, garimpo) com protocolos específicos para cada realidade.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Construção Civil -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#construcao">
+                        <i class="bi bi-bricks segment-icon"></i> Construção Civil
+                    </button>
+                </h2>
+                <div id="construcao" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções completas para canteiros de obras com foco em NR-18 e prevenção de quedas (NR-35).</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>PGR (Programa de Gerenciamento de Riscos) – NR-01</li>
+                                    <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional) – NR-07</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <span class="badge bg-success mb-2">Presencial/EAD</span>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPA</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 12 - Máquinas e Equipamentos (betoneira, motoserra, roçadeira, ferramentas rotativas</li>
+                                    <li>NR 11 - Operação de máquinas pesadas bem como condução dos veículos pesados</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento</li>
+                                    <li>FDS (FISPQ) – produtos químicos utilizados em obra (cimento, cal, argamassas, tintas etc.)</li>
+                                    <li>NR 18 - Treinamento básico, que é a base para todas as atividades, tem uma carga horária mínima de 4 horas. Além disso, existem treinamentos específicos para atividades como trabalho em altura, uso de equipamentos de guindar (grua, guindaste etc.), escavação, entre outros, com cargas horárias que variam de acordo com a complexidade da atividade</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em altura</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Atendimento diferenciado para diferentes etapas da construção (fundação, estrutura, acabamento) e tipos de obra (residencial, comercial, industrial).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Prestação de Serviços -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicos">
+                        <i class="bi bi-briefcase segment-icon"></i> Prestação de Serviços e Terceirização
+                    </button>
+                </h2>
+                <div id="servicos" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções flexíveis para empresas terceirizadas com atendimento personalizado conforme necessidade do contratante.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>PGR (Programa de Gerenciamento de Riscos) – NR-01</li>
+                                    <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional) – NR-07</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <ul>
+                                    <li>Todas as NRs</li>
+                                    <li>Todas as RAC's VALE</li>
+                                    <li>Treinamentos Específicos Solicitados por Contratante</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                    <li>Mobilização e terceirização de mão de obra</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Atendimento adaptável para diferentes tipos de serviços terceirizados (limpeza, segurança, manutenção, etc.) com protocolos específicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Serviços de Saúde -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#saude">
+                        <i class="bi bi-heart-pulse segment-icon"></i> Serviços de Saúde (Hospitais e Clínicas)
+                    </button>
+                </h2>
+                <div id="saude" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções especializadas para saúde com ênfase em NR-32 e biossegurança.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>PGR (Programa de Gerenciamento de Riscos) – NR-01</li>
+                                    <li>PCMSO (Programa de Controle Médico de Saúde Ocupacional) – NR-07</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>NR 32 - PGRSS - Plano de Gerenciamento de Resíduo de serviço de Saúde</li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <span class="badge bg-success mb-2">Presencial/EAD</span>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPA</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 12 - Máquinas e Equipamentos (betoneira, motoserra, roçadeira, ferramentas rotativas</li>
+                                    <li>NR 11 - Operação de máquinas pesadas bem como condução dos veículos pesados</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento</li>
+                                    <li>FDS (FISPQ) – produtos químicos utilizados em obra (cimento, cal, argamassas, tintas etc.)</li>
+                                    <li>NR 32 – PGRSS</li>
+                                    <li>NR 32 – Biossegurança</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em altura</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Protocolos específicos para diferentes áreas da saúde (hospitais, laboratórios, clínicas) com foco em prevenção de acidentes biológicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Metalurgia -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#metalurgia">
+                        <i class="bi bi-gear segment-icon"></i> Metalurgia
+                    </button>
+                </h2>
+                <div id="metalurgia" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Atendimento especializado para indústrias metalúrgicas com foco em NR-12 e segurança de máquinas.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>NR 01 - PGR (Programa de Gerenciamento de Riscos)</li>
+                                    <li>PCMSO - (Programa de Controle Médico de Saúde Ocupacional) – NR-07, com exames médicos específicos para mineração</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPA</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - Treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 11/12 - Máquinas e Equipamentos (máquinas rotativas, torno, fresa, prensas, tesouras, CNC, plataformas elevatórias, empilhadeiras, pontes, pórticos, etc.)</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento, florestais e animais peçonhentos e perigosos</li>
+                                    <li>FDS (FISPQ) – Produtos Químicos</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em alturas</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Protocolos específicos para diferentes processos metalúrgicos (fundição, usinagem, solda) com enfoque em proteção térmica e contra partículas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7: Transporte e Logística -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transporte">
+                        <i class="bi bi-truck segment-icon"></i> Transporte e Logística
+                    </button>
+                </h2>
+                <div id="transporte" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções completas para transporte de cargas e logística com foco em direção defensiva e NR-11.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>NR 01 - PGR (Programa de Gerenciamento de Riscos)</li>
+                                    <li>PCMSO - (Programa de Controle Médico de Saúde Ocupacional) – NR-07, com exames médicos específicos para mineração</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPA</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - Treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 11/12 - Máquinas e Equipamentos (máquinas rotativas, torno, fresa, prensas, tesouras, CNC, plataformas elevatórias, empilhadeiras, pontes, pórticos, etc.)</li>
+                                    <li>Direção Defensiva – Frotistas e motoristas de caminhão</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento, florestais e animais peçonhentos e perigosos</li>
+                                    <li>FDS (FISPQ) – Produtos Químicos</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em alturas</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Protocolos diferenciados para diferentes modais (rodoviário, ferroviário, aquaviário) e tipos de carga (granel, contêineres, perigosas).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8: Siderurgia -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#siderurgia">
+                        <i class="bi bi-building segment-icon"></i> Siderurgia
+                    </button>
+                </h2>
+                <div id="siderurgia" class="accordion-collapse collapse" data-bs-parent="#segmentosAccordion">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <!-- Coluna 1: Imagem -->
+                            <div class="col-md-3">
+                                <div class="img-placeholder">
+                                    <div class="text-center">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p>Imagem do segmento</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="segment-title">Destaques do Segmento</h5>
+                                    <p>Soluções especializadas para siderúrgicas com enfoque em ambientes de alta temperatura e manuseio de materiais pesados.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Coluna 2: Programas e Laudos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-file-earmark-check"></i> Programas e Laudos</h5>
+                                <ul>
+                                    <li>NR 01 - PGR (Programa de Gerenciamento de Riscos)</li>
+                                    <li>PCMSO - (Programa de Controle Médico de Saúde Ocupacional) – NR-07, com exames médicos específicos para mineração</li>
+                                    <li>ASO – Exames:
+                                        <ul>
+                                            <li>Admissional</li>
+                                            <li>Periódico</li>
+                                            <li>Mudança de Risco</li>
+                                            <li>Retorno ao Trabalho</li>
+                                            <li>Demissional</li>
+                                        </ul>
+                                    </li>
+                                    <li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+                                    <li>NR 15 - Laudo de Insalubridade</li>
+                                    <li>NR 16 - Laudo de Periculosidade</li>
+                                    <li>NR 17 - AET (Análise Ergonômica do Trabalho)</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 3: Treinamentos -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-book"></i> Treinamentos</h5>
+                                <ul>
+                                    <li>NR 01 – Ordem de Serviço</li>
+                                    <li>NR 05 – CIPA</li>
+                                    <li>NR 06 – Equipamento de Proteção Individual</li>
+                                    <li>NR 10 - treinamento em segurança em instalações e serviços em eletricidade: básico, complementar (SEP) e reciclagem</li>
+                                    <li>NR 11/12 - Máquinas e Equipamentos (máquinas rotativas, torno, fresa, prensas, tesouras, CNC, plataformas elevatórias, empilhadeiras, pontes, pórticos etc.)</li>
+                                    <li>Brigada de Incêndio - Em áreas com maior risco de incêndio, como áreas de armazenamento, florestais e animais peçonhentos e perigosos</li>
+                                    <li>FDS (FISPQ) – Produtos Químicos</li>
+                                    <li>NR 33 - Espaços Confinados</li>
+                                    <li>NR 35 - Atividades que envolvem trabalho em alturas</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Coluna 4: Relatórios -->
+                            <div class="col-md-3">
+                                <h5 class="segment-title"><i class="bi bi-clipboard-data"></i> Relatórios de Inspeção</h5>
+                                <ul>
+                                    <li>Avaliação de condições ambientais de trabalho</li>
+                                    <li>Relatórios de conformidade com normas de segurança</li>
+                                    <li>Monitoramento de agentes químicos e físicos</li>
+                                    <li>Auditorias em processos de segurança</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <h5 class="segment-title"><i class="bi bi-gear"></i> Especificidades</h5>
+                                    <p>Protocolos específicos para diferentes etapas do processo siderúrgico (alto-forno, laminação, tratamento térmico) com equipamentos de proteção especializados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

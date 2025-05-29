@@ -597,7 +597,48 @@ body {
 }
 
 .training-section {
-    background-color: #f8f9fa;
+    background-color: var(--verde-claro);
     padding: 60px 0;
     margin: 60px 0;
+}
+
+/*PÁGINA SEEGMENTOS*/
+
+.segment-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: var(--laranja);
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(102, 126, 89, 0.3);
+    color: var(--verde-escuro);
+}
+.badge-custom {
+    background-color: #198754;
+}
+.accordion-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.accordion-body li:before {
+    content: "•";
+    color: var(--laranja);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.img-placeholder {
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.segment-title {
+    font-weight: 600;
+    color: var(--verde-escuro);
 }
